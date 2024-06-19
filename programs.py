@@ -198,5 +198,37 @@ for i in range(n):
     l.append(a)
 print("Max: ", l.max())
 print("Min: ", l.min())
+#23. Write a program that converts temperature from Celsius to Fahrenheit and vice versa based on user input.
+cel = int(input("Enter temperature in celcius"))
+far = (cel*1.8)+32
+print("Temp in farenhite: ", far)
+#24 . Write a program that acts as a simple calculator. It should take two numbers and an operator (+, -, *, /) as input and print the result.
+a = int(input("Enter first number"))
+b = int(input("Enter second number"))
+c = input("Enter an operator")
+if(c=="+"):
+    print(a+b)
+elif(c=='-'):
+    print(a-b)
+elif(c=='*'):
+    print(a*b)
+elif(c=="/"):
+    print(a/b)
+else:
+    print("Not a valid operator")
+#25Write a program that copies the contents of one text file to another
+#26 Write a program in python that checks if a string starts with a given prefix or ends with a given suffix
+str = input("Enter a string")
+pre = input("Enter prefix")
+suf = input("Enter a suffix")
+revStr = str[::-1]
+if (str[:len(pre)]==pre) or(revStr[:len(suf)]==suf[::-1]):
+    print("Present")
+else:
+    print("Absent")
+#27 Write a program in python that converts a string into a list of its characters.
+str = input("Enter a string")
+x = list(str)
+print(x)
 
 
